@@ -6,12 +6,11 @@
 html, body {
   min-height: 100vh;
   display: grid;
-  background: #facec7;
 }
 
 body {
   margin: 0;
-  /*display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
@@ -22,19 +21,14 @@ body {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;*/
+  justify-content: center;
+  background: #fbc7bf;
 }
 
 .container {
   margin: auto;
   width: 18rem;
   height: 14rem;
-
-  /*position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;*/
 }
 
 .fill {
@@ -93,6 +87,8 @@ body {
   width: 0.35rem;
   height: 0.5rem;
   border-radius: 100%;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
   transform: rotate(10deg);
 }
 
@@ -153,18 +149,24 @@ body {
 .stem.top {
   top: -4rem;
   left: 12rem;
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
   transform: rotate(-30deg);
 }
 
 .stem.middle {
   top: -3.5rem;
   left: 13rem;
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
   transform: rotate(5deg);
 }
 
 .stem.bottom {
   top: -2.5rem;
   left: 13.5rem;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
   transform: rotate(50deg);
 }
 
@@ -174,8 +176,6 @@ body {
   height: 14rem;
   background: #f6efd7;
   border-radius: 100% 40% 20% 50% / 30% 20% 20% 20%;
-
-  /*transform: rotate(-10deg);*/
 }
 
 .cake:before {
@@ -187,22 +187,18 @@ body {
   height: 4rem;
   background: #fff;
   border-radius: 150% 30% 30% 50% / 100% 100% 100% 0%;
-  /*border-radius: 0%; block sushi? */
 }
 
 .cake:after {
   content: '';
   position: absolute;
   z-index: -1;
-  top: 10rem;
-  left: 0;
-  width: 18rem;
+  top: 9rem;
+  left: 1.3rem;
+  width: 16rem;
   height: 5rem;
-  background: #d9aa8c;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  -webkit-box-shadow: 4px 4px 26px 16px #d9aa8c;
-  -moz-box-shadow: 4px 4px 26px 16px #d9aa8c;
-  box-shadow: 4px 4px 26px 16px #d9aa8c;
+  opacity: 0.65;
+  border-radius: 100% 100% 50% 0%;
+  -webkit-box-shadow: 0 0 3rem 2rem #d99c8c;
+  box-shadow: 0 0 3rem 2rem #d99c8c;
 }
