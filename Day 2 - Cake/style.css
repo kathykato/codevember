@@ -1,0 +1,208 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+  background: #facec7;
+}
+
+body {
+  margin: 0;
+  /*display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;*/
+}
+
+.container {
+  margin: auto;
+  width: 18rem;
+  height: 14rem;
+
+  /*position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+}
+
+.fill {
+  z-index: 1;
+  width: 16rem;
+  height: 2rem;
+  border-radius: 0% 10% 10% 0%;
+}
+
+.fill.top,
+.fill.middle,
+.fill.bottom {
+  position: absolute;
+  background: #fde2ab;
+}
+
+.fill.top {
+  top: 5rem;
+}
+
+.fill.middle {
+  top: 8.5rem;
+}
+
+.fill.bottom {
+  bottom: 0;
+}
+
+.fill.strawberry-fill {
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+  width: 4rem;
+  height: 2rem;
+  background: #f29583;
+  border-radius: 100%;
+}
+
+.fill.strawberry-fill.right {
+  left: 10rem;
+}
+
+.strawberry {
+  position: absolute;
+  z-index: 2;
+  top: -3rem;
+  left: 9rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #f29583;
+  border-radius: 100% 100% 100% 20%;
+}
+
+.strawberry .seeds {
+  z-index: 2;
+  width: 0.35rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  transform: rotate(10deg);
+}
+
+.strawberry .seeds.one,
+.strawberry .seeds.two,
+.strawberry .seeds.three,
+.strawberry .seeds.four,
+.strawberry .seeds.five,
+.strawberry .seeds.six {
+  position: absolute;
+  background: #fff;
+}
+
+.strawberry .seeds.one {
+  top: 3rem;
+  left: 1.5rem;
+}
+
+.strawberry .seeds.two {
+  top: 1rem;
+  left: 2rem;
+}
+
+.strawberry .seeds.three {
+  top: 2rem;
+  left: 3rem;
+}
+
+.strawberry .seeds.four {
+  top: 2.5rem;
+  left: 4.5rem;
+}
+
+.strawberry .seeds.five {
+  top: 3.5rem;
+  left: 3.5rem;
+}
+
+.strawberry .seeds.six {
+  top: 0.8rem;
+  left: 4rem;
+}
+
+.stem {
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100% 0%;
+}
+
+.stem.top,
+.stem.middle,
+.stem.bottom {
+  position: absolute;
+  background: #b6f2a4;
+}
+
+.stem.top {
+  top: -4rem;
+  left: 12rem;
+  transform: rotate(-30deg);
+}
+
+.stem.middle {
+  top: -3.5rem;
+  left: 13rem;
+  transform: rotate(5deg);
+}
+
+.stem.bottom {
+  top: -2.5rem;
+  left: 13.5rem;
+  transform: rotate(50deg);
+}
+
+.cake {
+  position: absolute;
+  width: 18rem;
+  height: 14rem;
+  background: #f6efd7;
+  border-radius: 100% 40% 20% 50% / 30% 20% 20% 20%;
+
+  /*transform: rotate(-10deg);*/
+}
+
+.cake:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -0.2rem;
+  width: 18rem;
+  height: 4rem;
+  background: #fff;
+  border-radius: 150% 30% 30% 50% / 100% 100% 100% 0%;
+  /*border-radius: 0%; block sushi? */
+}
+
+.cake:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 10rem;
+  left: 0;
+  width: 18rem;
+  height: 5rem;
+  background: #d9aa8c;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 4px 4px 26px 16px #d9aa8c;
+  -moz-box-shadow: 4px 4px 26px 16px #d9aa8c;
+  box-shadow: 4px 4px 26px 16px #d9aa8c;
+}
