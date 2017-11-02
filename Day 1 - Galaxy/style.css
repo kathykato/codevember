@@ -1,0 +1,8 @@
+body {
+  background: #000719;
+  background: -webkit-radial-gradient(#093d60, #000719);
+  background: -o-radial-gradient(#093d60, #000719);
+  background: radial-gradient(#093d60, #000719);
+  margin: 0;
+  overflow: hidden;
+}
