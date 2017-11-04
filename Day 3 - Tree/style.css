@@ -1,0 +1,197 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #faf7ec;
+}
+
+.container {
+  margin: auto;
+  width: 20rem;
+  height: 20rem;
+}
+
+.tree {
+  position: absolute;
+  background: #afd673;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#7faf87), to(#afd673));
+  background-image: -webkit-linear-gradient(bottom, #7faf87 0%, #afd673 100%);
+  background-image: -o-linear-gradient(bottom, #7faf87 0%, #afd673 100%);
+  background-image: linear-gradient(to top, #7faf87 0%, #afd673 100%);
+  border-radius: 3rem;
+}
+
+.tree:before,
+.tree:after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  background: #afd673;
+  border-radius: 100%;
+}
+
+.tree.big {
+  top: 2.5rem;
+  width: 12rem;
+  height: 2.5rem;
+}
+
+.tree.big:before {
+  top: -1.5rem;
+  left: 1.5rem;
+  width: 4rem;
+  height: 3.5rem;
+}
+
+.tree.big:after {
+  top: -2.5rem;
+  left: 4.5rem;
+  width: 6rem;
+  height: 4.5rem;
+}
+
+.branch {
+  position: absolute;
+  z-index: -1;
+  width: 2rem;
+}
+
+.branch.one,
+.branch.two,
+.branch.three {
+  position: absolute;
+  background: #ae4549;
+}
+
+.branch.one {
+  top: 5rem;
+  left: 5rem;
+  height: 3rem;
+  border-radius: 0 0 1rem 0;
+}
+
+.branch *:before,
+.branch *:after {
+  position: absolute;
+  content: '';
+  width: inherit;
+  background: inherit;
+}
+
+.branch.one:before {
+  top: 1rem;
+  right: 2rem;
+  height: 5.5rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.branch.one:after {
+  top: 2.5rem;
+  left: 1.5rem;
+  height: 6rem;
+  border-radius: 1rem 0 0 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.branch.two {
+  top: 11rem;
+  left: 8.5rem;
+  height: 3.5rem;
+}
+
+.branch.two:before {
+  top: -2rem;
+  left: 3.5rem;
+  height: 6rem;
+  border-radius: 0 1rem 0 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.branch.two:after {
+  top: -2.5rem;
+  left: 5.5rem;
+  height: 2.5rem;
+}
+
+.tree.small {
+  top: 6.5rem;
+  left: 10.5rem;
+  width: 9.5rem;
+  height: 2rem;
+}
+
+.tree.small:before {
+  top: -1rem;
+  left: 1rem;
+  width: 3.5rem;
+  height: 2rem;
+}
+
+.tree.small:after {
+  top: -2rem;
+  left: 4rem;
+  width: 4.5rem;
+  height: 3rem;
+}
+
+.pot {
+  position: absolute;
+}
+
+.pot.full {
+  top: 14rem;
+  left: 1rem;
+  width: 18rem;
+  height: 6rem;
+  background: #4a7694;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4e606c), color-stop(45%, #4a7694));
+  background: -webkit-linear-gradient(bottom, #4e606c 0%, #4a7694 45%);
+  background: -o-linear-gradient(bottom, #4e606c 0%, #4a7694 45%);
+  background: linear-gradient(to top, #4e606c 0%, #4a7694 45%);
+  border-radius: 2rem 2rem 3rem 3rem;
+}
+
+.pot.full:before,
+.pot.full:after {
+  position: absolute;
+  content: '';
+}
+
+.pot.full:before {
+  width: inherit;
+  height: 1rem;
+  background: #afd673;
+  border-radius: 1rem 1rem 0 0; 
+}
+
+.pot.full:after {
+  top: 1rem;
+  left: -1rem;
+  width: 20rem;
+  height: 1rem;
+  background: #4a7694;
+}
