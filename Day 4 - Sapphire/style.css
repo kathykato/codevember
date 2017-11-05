@@ -1,0 +1,103 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #2b2235;
+}
+
+.container {
+  margin: auto;
+  width: 10rem;
+  height: 17.55rem;
+}
+
+.shape {
+  position: absolute;
+}
+
+.shape.top-left {
+  border-left: 5rem solid transparent;
+  border-bottom: 5rem solid #5f6fcf;
+}
+
+.shape.top-right {
+  left: 5rem;
+  border-right: 5rem solid transparent;
+  border-bottom: 5rem solid #74acdd;
+}
+
+.shape.left {
+  top: 5rem;
+  width: 3rem;
+  height: 7.5rem;
+  background: #5a5ab6;
+}
+
+.shape.right {
+  top: 5rem;
+  left: 7rem;
+  width: 3rem;
+  height: 7.5rem;
+  background: #5f6fcf;
+}
+
+.shape.bottom-left {
+  top: 12.5rem;
+  border-top: 5rem solid #594c8a;
+  border-left: 5rem solid transparent;
+}
+
+.shape.bottom-right {
+  top: 12.5rem;
+  left: 5rem;
+  border-top: 5rem solid #5a5ab6;
+  border-right: 5rem solid transparent;
+}
+
+.hexagon {
+  position: absolute;
+}
+
+.hexagon.top {
+  top: 2rem;
+  left: 2rem;
+  border-bottom: 3rem solid #6382d6;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+}
+
+.hexagon.middle {
+  top: 5rem;
+  left: 2rem;
+  width: 6rem;
+  height: 7.5rem;
+  background: #6382d6;
+}
+
+.hexagon.bottom {
+  top: 12.5rem;
+  left: 2rem;
+  border-top: 3rem solid #6382d6;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+}
