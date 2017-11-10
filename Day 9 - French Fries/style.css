@@ -1,0 +1,218 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #c8dae3;
+}
+
+.container {
+  margin: auto;
+  width: 15rem;
+  height: 18rem;
+}
+
+.box {
+  position: absolute;
+}
+
+.box.shape {
+  width: 15rem;
+  height: 18rem;
+  border-radius: 0% 0% 15% 15%;
+  overflow: hidden;
+}
+
+.box.shape:before {
+  position: absolute;
+  content: '';
+  top: -10rem;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 15rem 0 5rem #d6343e;
+  box-shadow: 0 15rem 0 5rem #d6343e;
+}
+
+.box.shape:after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  width: 15rem;
+  height: 8rem;
+  background: #a83838;
+  border-radius: 100%;
+}
+
+.box.shape-bottom {
+  top: 17rem;
+  width: 15rem;
+  height: 4rem;
+  background: #c8dae3;
+  border-radius: 100% 100% 0% 0%;
+}
+
+.fries {
+  position: absolute;
+  z-index: -1;
+}
+
+.fries.fry {
+  width: 2rem;
+  height: 12rem;
+  background: #ffb73b;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ba6f30), to(#ffb73b));
+  background-image: -webkit-linear-gradient(bottom, #ba6f30 0%, #ffb73b 100%);
+  background-image: -o-linear-gradient(bottom, #ba6f30 0%, #ffb73b 100%);
+  background-image: linear-gradient(to top, #ba6f30 0%, #ffb73b 100%);
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0.1rem 0.1rem 0.1rem #cf762f;
+  box-shadow: 0 0.1rem 0.1rem 0.1rem #cf762f;
+}
+
+.fries.fry:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1rem;
+  background: #ffdb71;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.fries.fry:nth-child(1) {
+  left: 1.1rem;
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.fries.fry:nth-child(2) {
+  top: 1rem;
+  left: 2.5rem;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.fries.fry:nth-child(3) {
+  top: 2rem;
+  left: 5rem;
+  -webkit-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+.fries.fry:nth-child(4) {
+  top: 1rem;
+  left: 7.5rem;
+  -webkit-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+.fries.fry:nth-child(5) {
+  left: 11.9rem;
+  -webkit-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+
+.fries.fry:nth-child(6) {
+  z-index: -2;
+  top: -1.5rem;
+  left: 1rem;
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.fries.fry:nth-child(7) {
+  z-index: -2;
+  top: -1rem;
+  left: 2rem;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.fries.fry:nth-child(8) {
+  z-index: -2;
+  top: -0.5rem;
+  left: 3.5rem;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.fries.fry:nth-child(9) {
+  z-index: -2;
+  top: -1rem;
+  left: 6.5rem;
+  -webkit-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+.fries.fry:nth-child(10) {
+  z-index: -2;
+  top: -1rem;
+  left: 9rem;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.fries.fry:nth-child(11) {
+  z-index: -2;
+  top: -0.5rem;
+  left: 10rem;
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.fries.fry:nth-child(12) {
+  z-index: -3;
+  top: -1.5rem;
+  left: 11rem;
+  -webkit-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+}
+
+.fries.fry:nth-child(13) {
+  z-index: -3;
+  top: -2.5rem;
+  left: 8rem;
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+.fries.fry:nth-child(14) {
+  z-index: -3;
+  top: -2.5rem;
+  left: 5rem;
+  -webkit-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
