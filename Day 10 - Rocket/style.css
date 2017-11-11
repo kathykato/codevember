@@ -22,18 +22,12 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #222b4d;
-}
-
-.background {
-  background-image:
-  -moz-radial-gradient(circle, #fff 0.02rem, #fff 0.05rem, transparent 0.2rem),
-  -moz-radial-gradient(circle, #fff 0.01rem, #fff 0.03rem, transparent 0.15rem),
-  -moz-radial-gradient(circle, rgba(255, 255, 255, 0.5) 0.01rem, #fff 0.02rem, transparent 0.15rem),
-  -moz-radial-gradient(circle, rgba(255, 255, 255, 0.5) 0.01rem, #fff 0.01rem, transparent 0.2rem);
-  background-size: 100vh 100vh, 55vh 45vh, 25vh 47vh, 42vh 30vh;
-  background-position: 0 0, -8rem 24rem, 4rem -37rem, 8rem 20rem;
-  animation: starMove 2.5s linear infinite;
+  background: #111736;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#041630), to(#111736));
+  background-image: -webkit-linear-gradient(bottom, #041630 0%, #111736 100%);
+  background-image: -o-linear-gradient(bottom, #041630 0%, #111736 100%);
+  background-image: linear-gradient(to top, #041630 0%, #111736 100%);
+  overflow: hidden;
 }
 
 .container {
@@ -51,6 +45,10 @@ body {
   width: 7rem;
   height: 11rem;
   background: #f6f7f8;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#b2b1b1), to(#f6f7f8));
+  background-image: -webkit-linear-gradient(bottom, #b2b1b1 0%, #f6f7f8 100%);
+  background-image: -o-linear-gradient(bottom, #b2b1b1 0%, #f6f7f8 100%);
+  background-image: linear-gradient(to top, #b2b1b1 0%, #f6f7f8 100%);
   border-radius: 50% / 70% 70% 5% 5%;
 }
 
@@ -62,6 +60,8 @@ body {
   background: #70b9e6;
   border: 0.5rem solid #808899;
   border-radius: 100%;
+  -webkit-box-shadow: inset -0.3rem 0.2rem 0.2rem 0 #fff;
+  box-shadow: inset -0.3rem 0.2rem 0.2rem 0 #fff;
 }
 
 .base.exhaust {
@@ -70,7 +70,7 @@ body {
   left: 2.5rem;
   width: 6rem;
   height: 2rem;
-  background: #0a0f1a;
+  background: #2f3448;
   border-radius: 20%;
 }
 
@@ -83,7 +83,11 @@ body {
   background: #fbd730;
   border: 0.5rem solid #f18720;
   border-radius: 80% 0 50% 45% / 50% 0% 80% 45%;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
+  -webkit-animation: flameMove 0.25s infinite both ease-in;
+  animation: flameMove 0.25s infinite both ease-in;
 }
 
 .fin {
@@ -96,6 +100,10 @@ body {
 .fin.right {
   top: 7rem;
   background: #db314e;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#862033), to(#db314e));
+  background-image: -webkit-linear-gradient(bottom, #862033 0%, #db314e 100%);
+  background-image: -o-linear-gradient(bottom, #862033 0%, #db314e 100%);
+  background-image: linear-gradient(to top, #862033 0%, #db314e 100%);
 }
 
 .fin.left {
@@ -107,11 +115,204 @@ body {
   border-radius: 0 3rem 100% 50%;
 }
 
-@keyframes starMove {
-  from {
-    background-position: 0 0;
+.star {
+  position: absolute;
+  z-index: -1;
+  top: -1rem;
+  width: 0.1rem;
+  height: 0.4rem;
+  border-radius: 100%;
+  -webkit-animation: starMove 1s infinite both ease-in;
+  animation: starMove 1s infinite both ease-in;
+}
+
+.star:nth-child(1) {
+  left: 2rem;
+  background: #fff;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.star:nth-child(2) {
+  left: 14rem;
+  background: #fff;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.star:nth-child(3) {
+  left: 32rem;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  background: #fff;
+}
+
+.star:nth-child(4) {
+  left: 55rem;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.star:nth-child(5) {
+  left: 88rem;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.star:nth-child(6) {
+  left: 25rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+
+.star:nth-child(7) {
+  left: 98rem;
+  background: #fff;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.star:nth-child(8) {
+  left: 38rem;
+  background: #fff;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+
+.star:nth-child(9) {
+  left: 50rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.star:nth-child(10) {
+  left: 64rem;
+  background: #fff;
+  -webkit-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+}
+
+.star:nth-child(11) {
+  left: 82rem;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.star:nth-child(12) {
+  left: 27rem;
+  background: #fff;
+  -webkit-animation-delay: 0.65s;
+  animation-delay: 0.65s;
+}
+
+.star:nth-child(13) {
+  left: 68rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.star:nth-child(14) {
+  left: 20rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.star:nth-child(15) {
+  left: 85rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.star:nth-child(16) {
+  left: 24rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.85s;
+  animation-delay: 0.85s;
+}
+
+.star:nth-child(17) {
+  left: 7rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.star:nth-child(18) {
+  left: 48rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.95s;
+  animation-delay: 0.95s;
+}
+
+.star:nth-child(19) {
+  left: 18rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.star:nth-child(20) {
+  left: 85rem;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+.star:nth-child(21) {
+  left: 9rem;
+  background: #fff;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.star:nth-child(22) {
+  left: 60rem;
+  background: #fff;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+@-webkit-keyframes flameMove {
+  0% {
+    opacity: 0;
   }
-  to {
-    background-position: 0 100vh;
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flameMove {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes starMove {
+  100% {
+    -webkit-transform: translate3d(0, 102vh, 0);
+    transform: translate3d(0, 102vh, 0);
+  }
+}
+@keyframes starMove {
+  100% {
+    -webkit-transform: translate3d(0, 102vh, 0);
+    transform: translate3d(0, 102vh, 0);
   }
 }
