@@ -47,6 +47,8 @@ body {
   left: 2.45rem;
   width: 6.2rem;
   height: 0.5rem;
+  -webkit-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
   transform: rotate(-50deg);
 }
 
