@@ -200,7 +200,7 @@ body {
   background-image: -webkit-linear-gradient(bottom, #b2b1b1 0%, #f6eeee 80%);
   background-image: -o-linear-gradient(bottom, #b2b1b1 0%, #f6eeee 80%);
   background-image: linear-gradient(to top, #b2b1b1 0%, #f6eeee 80%);
-  border-radius: 0% 100% 50% 100% / 0% 80% 0% 100%;
+  border-radius: 0% 100% 50% 100%;
   -webkit-transform: rotate(43deg);
   -ms-transform: rotate(43deg);
   transform: rotate(43deg);
