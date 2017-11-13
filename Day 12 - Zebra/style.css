@@ -1,0 +1,236 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.container {
+  margin: auto;
+  width: 18rem;
+  height: 18rem;
+}
+
+.circle {
+  position: absolute;
+  z-index: 0;
+  width: 18rem;
+  height: 18rem;
+  background: #cae7ce;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.zebra {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.zebra.head {
+  z-index: 1;
+  top: 2rem;
+  left: 1.5rem;
+  width: 9.5rem;
+  height: 12rem;
+  background: #f6eeee;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#b2b1b1), color-stop(60%, #f6eeee));
+  background-image: -webkit-linear-gradient(bottom, #b2b1b1 0%, #f6eeee 60%);
+  background-image: -o-linear-gradient(bottom, #b2b1b1 0%, #f6eeee 60%);
+  background-image: linear-gradient(to top, #b2b1b1 0%, #f6eeee 60%);
+  border-radius: 100% 50%;
+  overflow: hidden;
+}
+
+.eye {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #272727;
+  border-radius: 100%;
+}
+
+.eye:after {
+  position: absolute;
+  content: '';
+  top: 0.25rem;
+  left: 0.75rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #fff;
+  border-radius: inherit;
+}
+
+.mouth {
+  position: absolute;
+  top: 7rem;
+  left: -1rem;
+  width: 8rem;
+  height: 8rem;
+  background: #4d4a4a;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#292f33), color-stop(70%, #4d4a4a));
+  background-image: -webkit-linear-gradient(bottom left, #292f33 0%, #4d4a4a 70%);
+  background-image: -o-linear-gradient(bottom left, #292f33 0%, #4d4a4a 70%);
+  background-image: linear-gradient(to top right, #292f33 0%, #4d4a4a 70%);
+  border-radius: 100%;
+}
+
+.mouth:before {
+  position: absolute;
+  content: '';
+  top: 1.5rem;
+  left: 6.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: #4d4a4a;
+  border-radius: inherit;
+}
+
+.mouth:after {
+  position: absolute;
+  content: '';
+  top: 1rem;
+  left: 2.5rem;
+  width: 0.5rem;
+  height: 1.25rem;
+  background: #272727;
+  border-radius: 100% 50%;
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.stripe {
+  position: absolute;
+  width: 1rem;
+  height: 4rem;
+  border: 0.5rem solid #4d4a4a;
+  border-radius: 50%;
+}
+
+.zebra.head .stripe:nth-child(1) {
+  top: 4.5rem;
+  left: 9rem;
+  -webkit-transform: rotate(-70deg) scaleX(-1);
+  -ms-transform: rotate(-70deg) scaleX(-1);
+  transform: rotate(-70deg) scaleX(-1);
+}
+
+.zebra.head .stripe:nth-child(2) {
+  top: 2.25rem;
+  left: 0.5rem;
+  -webkit-transform: rotate(-75deg);
+  -ms-transform: rotate(-75deg);
+  transform: rotate(-75deg);
+}
+
+.zebra.head .stripe:nth-child(3) {
+  left: 1rem;
+  -webkit-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+}
+
+.zebra.neck .stripe:nth-child(1) {
+  top: 5.5rem;
+  left: 4rem;
+  height: 8rem;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.zebra.neck .stripe:nth-child(2) {
+  top: -2rem;
+  left: 3rem;
+  -webkit-transform: rotate(20deg) scaleX(-1);
+  -ms-transform: rotate(20deg) scaleX(-1);
+  transform: rotate(20deg) scaleX(-1);
+}
+
+.zebra.neck .stripe:nth-child(3) {
+  top: -1rem;
+  left: 5.25rem;
+  height: 6rem;
+  -webkit-transform: rotate(25deg) scaleX(-1);
+  -ms-transform: rotate(25deg) scaleX(-1);
+  transform: rotate(25deg) scaleX(-1);
+}
+
+.zebra.neck .stripe:nth-child(4) {
+  top: 2rem;
+  left: 7.5rem;
+  height: 10rem;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.zebra.neck {
+  position: absolute;
+  top: 7rem;
+  left: 6rem;
+  width: 14rem;
+  height: 10rem;
+  background: #f6eeee;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#b2b1b1), color-stop(80%, #f6eeee));
+  background-image: -webkit-linear-gradient(bottom, #b2b1b1 0%, #f6eeee 80%);
+  background-image: -o-linear-gradient(bottom, #b2b1b1 0%, #f6eeee 80%);
+  background-image: linear-gradient(to top, #b2b1b1 0%, #f6eeee 80%);
+  border-radius: 0% 100% 50% 100% / 0% 80% 0% 100%;
+  -webkit-transform: rotate(43deg);
+  -ms-transform: rotate(43deg);
+  transform: rotate(43deg);
+  overflow: hidden;
+}
+
+.zebra.mane {
+  z-index: -1;
+  top: 0;
+  left: 6rem;
+  width: 12rem;
+  height: 16rem;
+  background: #4d4a4a;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#292f33), to(#4d4a4a));
+  background-image: -webkit-linear-gradient(bottom, #292f33 0%, #4d4a4a 100%);
+  background-image: -o-linear-gradient(bottom, #292f33 0%, #4d4a4a 100%);
+  background-image: linear-gradient(to top, #292f33 0%, #4d4a4a 100%);
+  border-radius: 0% 75%;
+}
+
+.zebra.ear {
+  position: absolute;
+  top: 1.5rem;
+  left: 9rem;
+  width: 3rem;
+  height: 3rem;
+  background: #ffb3a6;
+  border: 0.75rem solid #f6eeee;
+  border-radius: 80% 0% 50% 45% / 50% 0% 80% 45%;
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
