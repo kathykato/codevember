@@ -1,0 +1,168 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #b0d8cf;
+}
+
+.container {
+  margin: auto;
+  width: 18rem;
+  height: 12rem;
+}
+
+.cheese {
+  position: absolute;
+  width: 18rem;
+  height: 12rem;
+  background: #f6b300;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e68404), color-stop(50%, #f6b300));
+  background-image: -webkit-linear-gradient(bottom, #e68404 0%, #f6b300 50%);
+  background-image: -o-linear-gradient(bottom, #e68404 0%, #f6b300 50%);
+  background-image: linear-gradient(to top, #e68404 0%, #f6b300 50%);
+}
+
+.cheese.top {
+  position: absolute;
+  z-index: 1;
+  width: 18rem;
+  height: 4rem;
+  background: #fada3d;
+  -webkit-box-shadow: inset 0 0.25rem 1rem #fff;
+  box-shadow: inset 0 0.25rem 1rem #fff;
+}
+
+.cheese.top:after {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  top: -2rem;
+  left: -1rem;
+  width: 20rem;
+  height: inherit;
+  background: #b0d8cf;
+  -webkit-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  transform: rotate(12deg);
+}
+
+.hole {
+  position: absolute;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  background: #da6c00;
+  border-radius: 100%;
+}
+
+.cheese.top .hole {
+  background: #f6b300;
+}
+
+.cheese.top .hole:nth-child(1) {
+  top: 2.75rem;
+  left: 1.75rem;
+  height: 2rem;
+  background: #fada3d;
+  -webkit-box-shadow: inset 0 0.75rem #f6b300;
+  box-shadow: inset 0 0.75rem #f6b300;
+}
+
+.cheese.top .hole:nth-child(2) {
+  top: 1rem;
+  left: 0.5rem;
+  width: 2rem;
+  height: 0.75rem;
+}
+
+.cheese.top .hole:nth-child(3) {
+  top: 2.25rem;
+  left: 6rem;
+  width: 2rem;
+  height: 1rem;
+}
+
+.cheese.top .hole:nth-child(4) {
+  top: 3rem;
+  left: 10rem;
+  width: 2.5rem;
+  height: 1.5rem;
+  background: #fada3d;
+  -webkit-box-shadow: inset 0 0.75rem #f6b300;
+  box-shadow: inset 0 0.75rem #f6b300;
+}
+
+.cheese.bottom .hole {
+  -webkit-box-shadow: inset 0 0.8rem #b85308;
+  box-shadow: inset 0 0.8rem #b85308;
+}
+
+.cheese.bottom .hole:nth-child(1) {
+  top: 7rem;
+  left: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.cheese.bottom .hole:nth-child(2) {
+  top: 5rem;
+  left: 6.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.cheese.bottom .hole:nth-child(3) {
+  top: 10.5rem;
+  left: 14rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #b0d8cf;
+  -webkit-box-shadow: inset 0 0.5rem #da6c00;
+  box-shadow: inset 0 0.5rem #da6c00;
+}
+
+.cheese.bottom .hole:nth-child(4) {
+  top: 5rem;
+  left: 16.9rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #b0d8cf;
+  border-radius: 100% 100% 0 0;
+  -webkit-box-shadow: inset 0 0.5rem #da6c00;
+  box-shadow: inset 0 0.5rem #da6c00;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.cheese.bottom .hole:nth-child(5) {
+  top: 5.5rem;
+  left: 12.5rem;
+}
+
+.cheese.bottom .hole:nth-child(6) {
+  top: 8.5rem;
+  left: 9.5rem;
+  width: 2rem;
+  height: 2rem;
+}
