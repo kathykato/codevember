@@ -1,0 +1,69 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fcf0c6;
+}
+
+.container {
+  margin: auto;
+  width: 15rem;
+  height: 12rem;
+}
+
+.shape {
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 100% 90% 80% 80%;
+}
+
+.shape.full {
+  background: #c1bfb6;
+  background-image: -webkit-radial-gradient(circle 10rem at top, #e1ded3 0%, #c1bfb6 50%, #89877a 100%);
+  background-image: -o-radial-gradient(circle 10rem at top, #e1ded3 0%, #c1bfb6 50%, #89877a 100%);
+  background-image: radial-gradient(circle 10rem at top, #e1ded3 0%, #c1bfb6 50%, #89877a 100%);
+  -webkit-box-shadow: inset -0.65rem -0.5rem 1.25rem 0.3rem rgba(224, 222, 207, 0.9);
+  box-shadow: inset 0 -0.65rem 1.25rem 0.3rem rgba(224, 222, 207, 0.9);
+}
+
+.shape.full:before {
+  position: absolute;
+  content: '';
+  left: 1.5rem;
+  width: 10rem;
+  height: 8rem;
+  background: -webkit-radial-gradient(5rem, circle, #fff, rgba(255, 255, 255, 0) 58%);
+  background: -o-radial-gradient(5rem, circle, #fff, rgba(255, 255, 255, 0) 58%);
+  background: radial-gradient(circle at 5rem, #fff, rgba(255, 255, 255, 0) 58%);
+  border-radius: 100%;
+  -webkit-filter: blur(0.5rem);
+  filter: blur(0.5rem);
+}
+
+.shape.shadow {
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 1.5rem 2rem 0 rgba(173, 113, 81, 0.58);
+  box-shadow: 0 1.5rem 2rem 0 rgba(173, 113, 81, 0.58);
+}
