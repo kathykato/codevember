@@ -43,8 +43,8 @@ body {
   background-image: -webkit-radial-gradient(circle 10rem at top, #e1ded3 0%, #c1bfb6 50%, #89877a 100%);
   background-image: -o-radial-gradient(circle 10rem at top, #e1ded3 0%, #c1bfb6 50%, #89877a 100%);
   background-image: radial-gradient(circle 10rem at top, #e1ded3 0%, #c1bfb6 50%, #89877a 100%);
-  -webkit-box-shadow: inset -0.65rem -0.5rem 1.25rem 0.3rem rgba(224, 222, 207, 0.9);
-  box-shadow: inset 0 -0.65rem 1.25rem 0.3rem rgba(224, 222, 207, 0.9);
+  -webkit-box-shadow: inset -0.55rem -0.5rem 1.25rem 0.3rem rgba(224, 222, 207, 0.7);
+  box-shadow: inset 0 -0.55rem 1.25rem 0.3rem rgba(224, 222, 207, 0.7);
 }
 
 .shape.full:before {
@@ -64,6 +64,6 @@ body {
 .shape.shadow {
   position: absolute;
   z-index: -1;
-  -webkit-box-shadow: 0 1.5rem 2rem 0 rgba(173, 113, 81, 0.58);
-  box-shadow: 0 1.5rem 2rem 0 rgba(173, 113, 81, 0.58);
+  -webkit-box-shadow: 0 1.5rem 2rem 0 rgba(173, 113, 81, 0.5);
+  box-shadow: 0 1.5rem 2rem 0 rgba(173, 113, 81, 0.5);
 }
