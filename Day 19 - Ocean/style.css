@@ -1,0 +1,147 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.container {
+  margin: auto;
+  width: 20rem;
+  height: 20rem;
+}
+
+.circle {
+  position: absolute;
+  z-index: 0;
+  width: 20rem;
+  height: 20rem;
+  background: #b2d8dd;
+  background-image: -webkit-radial-gradient(13rem 13rem, circle, #fff7e7 0%, #b2d8dd 60%);
+  background-image: -o-radial-gradient(13rem 13rem, circle, #fff7e7 0%, #b2d8dd 60%);
+  background-image: radial-gradient(circle at 13rem 13rem, #fff7e7 0%, #b2d8dd 60%);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  top: 7rem;
+  left: 10.5rem;
+  width: 5rem;
+  height: 5rem;
+  background: #ffe5b7;
+  background-image: -webkit-radial-gradient(circle, #ffe5b7 0%, #ffcfbc 100%);
+  background-image: -o-radial-gradient(circle, #ffe5b7 0%, #ffcfbc 100%);
+  background-image: radial-gradient(circle, #ffe5b7 0%, #ffcfbc 100%);
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 3rem 0.5rem #fff;
+  box-shadow: 0 0 3rem 0.5rem #fff;
+}
+
+.cloud:nth-child(1) {
+  left: 3.5rem;
+}
+
+.cloud:nth-child(2) {
+  top: 2.5rem;
+  left: -0.5rem;
+}
+
+.cloud {
+  position: absolute;
+  background: #fffff4;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e6e8ed), to(#fffff4));
+  background-image: -webkit-linear-gradient(bottom, #e6e8ed 0%, #fffff4 100%);
+  background-image: -o-linear-gradient(bottom, #e6e8ed 0%, #fffff4 100%);
+  background-image: linear-gradient(to top, #e6e8ed 0%, #fffff4 100%);
+  border-radius: 3rem;
+}
+
+.cloud:before,
+.cloud:after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  background: #fffff4;
+  border-radius: 100%;
+}
+
+.cloud.small {
+  top: 2.5rem;
+  width: 5rem;
+  height: 1rem;
+}
+
+.cloud.small:before {
+  top: -0.5rem;
+  left: 0.5rem;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.cloud.small:after {
+  top: -1rem;
+  left: 2rem;
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.boat {
+  position: absolute;
+}
+
+.boat.sail-left {
+  top: 7.5rem;
+  left: 3rem;
+  border-left: 1.75rem solid transparent;
+  border-bottom: 2rem solid #fffff4;
+}
+
+.boat.sail-right {
+  top: 8rem;
+  left: 5rem;
+  border-right: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid #fffff4;
+}
+
+.boat.bottom {
+  top: 9.5rem;
+  left: 3rem;
+  width: 3.5rem;
+  border-top: 0.5rem solid #f97e75;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+}
+
+.water {
+  position: absolute;
+  top: 10rem;
+  width: 20rem;
+  height: 10rem;
+  background: #9ec9d5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a4a3c3), color-stop(60%, #9ec9d5));
+  background-image: -webkit-linear-gradient(top, #a4a3c3 0%, #9ec9d5 60%);
+  background-image: -o-linear-gradient(top, #a4a3c3 0%, #9ec9d5 60%);
+  background-image: linear-gradient(to bottom, #a4a3c3 0%, #9ec9d5 60%);
+}
