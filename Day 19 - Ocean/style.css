@@ -37,9 +37,9 @@ body {
   width: 20rem;
   height: 20rem;
   background: #b2d8dd;
-  background-image: -webkit-radial-gradient(13rem 13rem, circle, #fff7e7 0%, #b2d8dd 60%);
-  background-image: -o-radial-gradient(13rem 13rem, circle, #fff7e7 0%, #b2d8dd 60%);
-  background-image: radial-gradient(circle at 13rem 13rem, #fff7e7 0%, #b2d8dd 60%);
+  background-image: -webkit-radial-gradient(13.5rem 13.5rem, circle, #fff7e7 0%, #b2d8dd 55%);
+  background-image: -o-radial-gradient(13.5rem 13.5rem, circle, #fff7e7 0%, #b2d8dd 55%);
+  background-image: radial-gradient(circle at 13.5rem 13.5rem, #fff7e7 0%, #b2d8dd 55%);
   border-radius: 100%;
   overflow: hidden;
 }
@@ -129,7 +129,7 @@ body {
   top: 9.5rem;
   left: 3rem;
   width: 3.5rem;
-  border-top: 0.5rem solid #f97e75;
+  border-top: 0.5rem solid #71788f;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
 }
@@ -139,9 +139,9 @@ body {
   top: 10rem;
   width: 20rem;
   height: 10rem;
-  background: #9ec9d5;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a4a3c3), color-stop(60%, #9ec9d5));
-  background-image: -webkit-linear-gradient(top, #a4a3c3 0%, #9ec9d5 60%);
-  background-image: -o-linear-gradient(top, #a4a3c3 0%, #9ec9d5 60%);
-  background-image: linear-gradient(to bottom, #a4a3c3 0%, #9ec9d5 60%);
+  background: #9ebcd5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9c9bbf), color-stop(60%, #9ebcd5));
+  background-image: -webkit-linear-gradient(top, #9c9bbf 0%, #9ebcd5 60%);
+  background-image: -o-linear-gradient(top, #9c9bbf 0%, #9ebcd5 60%);
+  background-image: linear-gradient(to bottom, #9c9bbf 0%, #9ebcd5 60%);
 }
