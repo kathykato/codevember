@@ -22,142 +22,156 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #323133;
+  background: #25242a;
 }
 
 .container {
   margin: auto;
   width: 14rem;
-  height: 14rem;
-}
-
-.diamond {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  transform: rotate(45deg) skew(15deg, 15deg);
-}
-
-.diamond:nth-child(1) {
-  background: #feeb42;
+  height: 13.5rem;
 }
 
 .crown {
   position: absolute;
 }
 
-.crown.left {
-  top: 2rem;
+.crown.top-left {
+  top: 1.5rem;
   border-right: 3.5rem solid transparent;
   border-bottom: 5rem solid #feeb42;
 }
 
-.crown.middle {
-  top: 2rem;
+.crown.top-left:before,
+.crown.top-middle:before,
+.crown.top-right:before,
+.crown.back-left:before,
+.crown.back-right:before {
+  position: absolute;
+  content: '';
+  top: -1.1rem;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+  -ms-transform: rotate(45deg) skew(15deg, 15deg);
+  transform: rotate(45deg) skew(15deg, 15deg);
+}
+
+.crown.top-left:before,
+.crown.top-middle:before,
+.crown.top-right:before {
+  background: #feeb42;
+}
+
+.crown.back-left:before,
+.crown.back-right:before {
+  background: #f59c38;
+}
+
+.crown.top-left:before {
+  left: -0.4rem;
+}
+
+.crown.top-middle {
+  top: 1.5rem;
   left: 3.5rem;
-  border-left: 3.5rem solid transparent;
-  border-right: 3.5rem solid transparent;
+  border-left: 3.55rem solid transparent;
+  border-right: 3.55rem solid transparent;
   border-bottom: 5rem solid #feeb42;
 }
 
-.crown.right {
-  top: 2rem;
+.crown.top-middle:before {
+  left: -0.5rem;
+}
+
+.crown.top-right {
+  top: 1.5rem;
   left: 10.5rem;
   border-left: 3.5rem solid transparent;
   border-bottom: 5rem solid #feeb42;
 }
 
+.crown.top-right:before {
+  left: -0.55rem;
+}
+
 .crown.back-left {
   z-index: -1;
-  top: 2rem;
+  top: 1.5rem;
   border-left: 3.5rem solid transparent;
   border-right: 3.5rem solid transparent;
   border-bottom: 5rem solid #f59c38;
 }
 
+.crown.back-left:before {
+  left: -0.45rem;
+}
+
 .crown.back-right {
   z-index: -1;
-  top: 2rem;
+  top: 1.5rem;
   left: 7rem;
   border-left: 3.5rem solid transparent;
   border-right: 3.5rem solid transparent;
   border-bottom: 5rem solid #f59c38;
 }
 
-.crown.bottom {
-  top: 7rem;
+.crown.back-right:before {
+  left: -0.5rem;
+}
+
+.crown.middle {
+  top: 6.45rem;
   width: 14rem;
-  height: 7rem;
+  height: 6rem;
   background: #feeb42;
+}
+
+.crown.bottom {
+  top: 12rem;
+  width: 14rem;
+  height: 1.5rem;
+  background: #feeb42;
+  border-top: 0.4rem solid #f59c38;
 }
 
 .jewel {
   position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.jewel.red.left,
+.jewel.red.right,
+.jewel.blue {
+  top: 6.5rem;
+  -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+  -ms-transform: rotate(45deg) skew(15deg, 15deg);
+  transform: rotate(45deg) skew(15deg, 15deg);
 }
 
 .jewel.red.left {
-  top: 8rem;
-  left: -1.25rem;
+  left: -1.75rem;
   background: #f2403e;
+  background-image: -webkit-gradient(linear, right top, left top, from(#c90042), to(#f2403e));
+  background-image: -webkit-linear-gradient(right, #c90042 0%, #f2403e 100%);
+  background-image: -o-linear-gradient(right, #c90042 0%, #f2403e 100%);
   background-image: linear-gradient(to left, #c90042 0%, #f2403e 100%);
-  transform: rotate(45deg) skew(15deg, 15deg);
-}
-
-.jewel.red.left:before {
-  position: absolute;
-  content: '';
-  top: -0.5rem;
-  left: -0.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-top: 0.15rem solid #000;
-  border-right: 0.15rem solid #000;
 }
 
 .jewel.red.right {
-  top: 8rem;
-  left: 12.75rem;
+  left: 12.25rem;
   background: #f2403e;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#c90042), to(#f2403e));
+  background-image: -webkit-linear-gradient(bottom, #c90042 0%, #f2403e 100%);
+  background-image: -o-linear-gradient(bottom, #c90042 0%, #f2403e 100%);
   background-image: linear-gradient(to top, #c90042 0%, #f2403e 100%);
-  transform: rotate(45deg) skew(15deg, 15deg);
-}
-
-.jewel.red.right:before {
-  position: absolute;
-  content: '';
-  top: -0.5rem;
-  left: -0.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-bottom: 0.15rem solid #000;
-  border-left: 0.15rem solid #000;
 }
 
 .jewel.blue {
-  top: 8rem;
-  left: 5.8rem;
+  left: 5.25rem;
   background: #849bd4;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#8369b2), to(#849bd4));
+  background-image: -webkit-linear-gradient(bottom, #8369b2 0%, #849bd4 100%);
+  background-image: -o-linear-gradient(bottom, #8369b2 0%, #849bd4 100%);
   background-image: linear-gradient(to top, #8369b2 0%, #849bd4 100%);
-  transform: rotate(45deg) skew(15deg, 15deg);
-}
-
-.jewel.blue:before {
-  position: absolute;
-  content: '';
-  top: -0.5rem;
-  left: -0.5rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  border: 0.15rem solid #000;
-}
-
-.jewel.blue:after {
-  position: absolute;
-  content: '';
-  width: 1rem;
-  height: 1rem;
-  background: #c1f2ff;
-  border-radius: 100%;
 }
