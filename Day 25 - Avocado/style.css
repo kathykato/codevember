@@ -1,0 +1,86 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #ffddbf;
+}
+
+.container {
+  margin: auto;
+  width: 14.5rem;
+  height: 18rem;
+}
+
+.fruit {
+  position: absolute;
+}
+
+.fruit.shape {
+  left: 0.5rem;
+  width: 14rem;
+  height: 18rem;
+  background: #faf691;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e3df5b), to(#faf691));
+  background-image: -webkit-linear-gradient(bottom, #e3df5b 0%, #faf691 100%);
+  background-image: -o-linear-gradient(bottom, #e3df5b 0%, #faf691 100%);
+  background-image: linear-gradient(to top, #e3df5b 0%, #faf691 100%);
+  border-top: 0.3rem solid;
+  border-left: 0.3rem solid;
+  border-right: 0.6rem solid;
+  border-bottom: 0.9rem solid;
+  border-color: #60653f;
+  border-radius: 50% / 60% 60% 40% 40%;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-box-shadow: inset 0 0.02rem 1rem 1rem #9ab74d;
+  box-shadow: inset 0 0.02rem 1rem 1rem #9ab74d;
+}
+
+.pit {
+  position: absolute;
+  content: '';
+  top: 7rem;
+  left: 3.5rem;
+  width: 6rem;
+  height: 7rem;
+  background: #b78013;
+  background-image: -webkit-radial-gradient(circle 5rem at 2rem 2rem, #fbd28d 0%, #b78013 47%, #863c0a 100%);
+  background-image: -o-radial-gradient(circle 5rem at 2rem 2rem, #fbd28d 0%, #b78013 47%, #863c0a 100%);
+  background-image: radial-gradient(circle 5rem at 2rem 2rem, #fbd28d 0%, #b78013 47%, #863c0a 100%);
+  border-radius: 100%;
+  -webkit-box-shadow: inset -0.5rem -0.5rem 1.25rem rgba(255, 195, 72, 0.8);
+  box-shadow: inset -0.5rem -0.5rem 1.25rem rgba(255, 195, 72, 0.8);
+}
+
+.pit.shadow {
+  position: absolute;
+  z-index: -1;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: 6rem;
+  height: 7rem;
+  background: #453e1b;
+  -webkit-filter: blur(0.15rem);
+  filter: blur(0.15rem);
+}
