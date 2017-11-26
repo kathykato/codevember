@@ -1,0 +1,196 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.container {
+  margin: auto;
+  width: 20rem;
+  height: 20rem;
+}
+
+.circle {
+  position: absolute;
+  z-index: 0;
+  width: 20rem;
+  height: 20rem;
+  background: #d6e0ff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd7df), to(#d6e0ff));
+  background-image: -webkit-linear-gradient(bottom, #ffd7df 0%, #d6e0ff 100%);
+  background-image: -o-linear-gradient(bottom, #ffd7df 0%, #d6e0ff 100%);
+  background-image: linear-gradient(to top, #ffd7df 0%, #d6e0ff 100%);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  z-index: -3;
+  top: 4rem;
+  left: 6rem;
+  width: 8rem;
+  height: 8rem;
+  background: #ffa6a4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffbfd9), color-stop(40%, #ffa6a4));
+  background-image: -webkit-linear-gradient(top, #ffbfd9 0%, #ffa6a4 40%);
+  background-image: -o-linear-gradient(top, #ffbfd9 0%, #ffa6a4 40%);
+  background-image: linear-gradient(to bottom, #ffbfd9 0%, #ffa6a4 40%);
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 1rem 0.5rem #fff4f6;
+  box-shadow: 0 0 1rem 0.5rem #fff4f6;
+}
+
+.divider {
+  position: absolute;
+  top: 7.3rem;
+  left: 6.5rem;
+  border-top: 2rem solid #ffa6a4;
+  border-left: 7rem solid #ffa6a4;
+}
+
+.mt-fuji {
+  position: absolute;
+  z-index: -2;
+  top: 10rem;
+  left: 3.5rem;
+  width: 13rem;
+  height: 13rem;
+  background: #aabffc;
+  background-image: -webkit-gradient(linear, right top, left top, from(#657aba), to(#aabffc));
+  background-image: -webkit-linear-gradient(right, #657aba 0%, #aabffc 100%);
+  background-image: -o-linear-gradient(right, #657aba 0%, #aabffc 100%);
+  background-image: linear-gradient(to left, #657aba 0%, #aabffc 100%);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.mt-fuji.top,
+.mt-fuji.top-left,
+.mt-fuji.top-right,
+.mt-fuji.top-far-left,
+.mt-fuji.top-far-right {
+  background: #feffff;
+  box-shadow: none;
+}
+
+.mt-fuji.top {
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.mt-fuji.top-left {
+  top: 2rem;
+  left: -0.2rem;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.mt-fuji.top-right {
+  top: -0.2rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.mt-fuji.top-far-left {
+  top: 3.5rem;
+  left: -0.5rem;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transform: rotate(23deg);
+  -ms-transform: rotate(23deg);
+  transform: rotate(23deg);
+}
+
+.mt-fuji.top-far-right {
+  top: -0.5rem;
+  left: 3.5rem;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transform: rotate(-23deg);
+  -ms-transform: rotate(-23deg);
+  transform: rotate(-23deg);
+}
+
+.cloud:nth-child(1) {
+  left: 0;
+}
+
+.cloud:nth-child(2) {
+  top: 2.5rem;
+  left: 11.5rem;
+}
+
+.cloud {
+  position: absolute;
+  background: #feffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#dde6f5), to(#feffff));
+  background-image: -webkit-linear-gradient(bottom, #dde6f5 0%, #feffff 100%);
+  background-image: -o-linear-gradient(bottom, #dde6f5 0%, #feffff 100%);
+  background-image: linear-gradient(to top, #dde6f5 0%, #feffff 100%);
+  border-radius: 3rem;
+}
+
+.cloud:before,
+.cloud:after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  background: #feffff;
+  border-radius: 100%;
+}
+
+.cloud.small {
+  top: 13rem;
+  width: 7.5rem;
+  height: 1.25rem;
+}
+
+.cloud.small:before {
+  top: -0.75rem;
+  left: 0.5rem;
+  width: 3rem;
+  height: 1.75rem;
+}
+
+.cloud.small:after {
+  top: -1.5rem;
+  left: 3rem;
+  width: 4rem;
+  height: 2.5rem;
+}
