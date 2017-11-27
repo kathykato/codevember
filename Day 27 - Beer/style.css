@@ -33,7 +33,6 @@ body {
 
 .foam {
   position: absolute;
-  top: 7rem;
   background: #feffff;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fceec5), to(#feffff));
   background-image: -webkit-linear-gradient(bottom, #fceec5 0%, #feffff 100%);
@@ -52,6 +51,7 @@ body {
 }
 
 .foam.big:nth-child(1) {
+  top: 2.5rem;
   width: 12rem;
   height: 3.5rem;
 }
@@ -71,7 +71,7 @@ body {
 }
 
 .foam.big:nth-child(2) {
-  top: 7rem;
+  top: 2.5rem;
   left: 6.5rem;
   width: 4.5rem;
   height: 4rem;
@@ -95,6 +95,7 @@ body {
 
 .foam.drip-left {
   z-index: 1;
+  top: 2.5rem;
   left: 6.25rem;
   width: 1.125rem;
   height: 6rem;
@@ -103,6 +104,7 @@ body {
 
 .foam.drip-right {
   z-index: 1;
+  top: 2.5rem;
   left: 7.95rem;
   width: 1.125rem;
   height: 7rem;
@@ -112,11 +114,10 @@ body {
 .mug {
   position: absolute;
   z-index: -2;
-  top: 16.5rem;
 }
 
 .mug.outer {
-  top: 0;
+  top: 5rem;
   left: 1rem;
   width: 9.5rem;
   height: 13rem;
@@ -124,7 +125,7 @@ body {
 }
 
 .mug.inner {
-  top: 0.5rem;
+  top: 5.5rem;
   left: 1.75rem;
   width: 8rem;
   height: 11.75rem;
@@ -136,7 +137,7 @@ body {
 }
 
 .mug.handle {
-  top: 2rem;
+  top: 7rem;
   left: 9.75rem;
   width: 3.25rem;
   height: 9rem;
