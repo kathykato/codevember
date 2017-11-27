@@ -1,0 +1,237 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #bcd9f3;
+}
+
+.container {
+  margin: auto;
+  width: 13rem;
+  height: 18rem;
+}
+
+.foam {
+  position: absolute;
+  top: 7rem;
+  background: #feffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fceec5), to(#feffff));
+  background-image: -webkit-linear-gradient(bottom, #fceec5 0%, #feffff 100%);
+  background-image: -o-linear-gradient(bottom, #fceec5 0%, #feffff 100%);
+  background-image: linear-gradient(to top, #fceec5 0%, #feffff 100%);
+  border-radius: 3rem;
+}
+
+.foam:before,
+.foam:after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  background: #feffff;
+  border-radius: 100%;
+}
+
+.foam.big:nth-child(1) {
+  width: 12rem;
+  height: 3.5rem;
+}
+
+.foam.big:nth-child(1):before {
+  top: -1.5rem;
+  left: 1.5rem;
+  width: 4.5rem;
+  height: 3rem;
+}
+
+.foam.big:nth-child(1):after {
+  top: -2.5rem;
+  left: 4.5rem;
+  width: 6rem;
+  height: 5.5rem;
+}
+
+.foam.big:nth-child(2) {
+  top: 7rem;
+  left: 6.5rem;
+  width: 4.5rem;
+  height: 4rem;
+}
+
+.foam.big:nth-child(2):before {
+  z-index: 1;
+  left: -6rem;
+  width: 4.5rem;
+  height: 4rem;
+  background: inherit;
+}
+
+.foam.big:nth-child(2):after {
+  z-index: 1;
+  left: -3.5rem;
+  width: 5rem;
+  height: 4rem;
+  background: inherit;
+}
+
+.foam.drip-left {
+  z-index: 1;
+  left: 6.25rem;
+  width: 1.125rem;
+  height: 6rem;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.foam.drip-right {
+  z-index: 1;
+  left: 7.95rem;
+  width: 1.125rem;
+  height: 7rem;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.mug {
+  position: absolute;
+  z-index: -2;
+  top: 16.5rem;
+}
+
+.mug.outer {
+  top: 0;
+  left: 1rem;
+  width: 9.5rem;
+  height: 13rem;
+  background: #f6feff;
+}
+
+.mug.inner {
+  top: 0.5rem;
+  left: 1.75rem;
+  width: 8rem;
+  height: 11.75rem;
+  background: #fbd193;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f6aa56), to(#fbd193));
+  background-image: -webkit-linear-gradient(bottom, #f6aa56 0%, #fbd193 100%);
+  background-image: -o-linear-gradient(bottom, #f6aa56 0%, #fbd193 100%);
+  background-image: linear-gradient(to top, #f6aa56 0%, #fbd193 100%);
+}
+
+.mug.handle {
+  top: 2rem;
+  left: 9.75rem;
+  width: 3.25rem;
+  height: 9rem;
+  background: none;
+  border: 1rem solid #f6feff;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.bubble {
+  position: absolute;
+  z-index: -1;
+  top: 9rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 100%;
+  background: rgba(254, 255, 255, 0.3);
+  opacity: 0;
+  -webkit-animation: bubbleUp 2.8s infinite both ease-in;
+  animation: bubbleUp 2.8s infinite both ease-in;
+}
+
+.bubble:nth-child(1) {
+  left: 0.75rem;
+}
+
+.bubble:nth-child(2) {
+  top: 7rem;
+  left: 3.75rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.bubble:nth-child(3) {
+  top: 8.5rem;
+  left: 2.75rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.bubble:nth-child(4) {
+  top: 8rem;
+  left: 4.5rem;
+}
+
+.bubble:nth-child(5) {
+  top: 9rem;
+  left: 6.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.bubble:nth-child(6) {
+  top: 6rem;
+  left: 1.5rem;
+}
+
+.bubble:nth-child(7) {
+  top: 6rem;
+  left: 6.15rem;
+}
+
+@-webkit-keyframes bubbleUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -12rem, 0);
+    transform: translate3d(0, -12rem, 0);
+  }
+}
+
+@keyframes bubbleUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -12rem, 0);
+    transform: translate3d(0, -12rem, 0);
+  }
+}
