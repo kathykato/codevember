@@ -1,0 +1,206 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.container {
+  margin: auto;
+  width: 18rem;
+  height: 18rem;
+}
+
+.circle {
+  position: absolute;
+  z-index: 0;
+  width: 18rem;
+  height: 18rem;
+  background: #ffd8cf;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.giraffe {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+
+.giraffe.head {
+  z-index: 1;
+  top: 2rem;
+  width: 11.25rem;
+  height: 6.5rem;
+  background: #ffcd46;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f8901d), color-stop(60%, #ffcd46));
+  background-image: -webkit-linear-gradient(bottom, #f8901d 0%, #ffcd46 60%);
+  background-image: -o-linear-gradient(bottom, #f8901d 0%, #ffcd46 60%);
+  background-image: linear-gradient(to top, #f8901d 0%, #ffcd46 60%);
+  border-radius: 20% 30% 30% 80%;
+}
+
+.eye {
+  position: absolute;
+  top: 1.75rem;
+  left: 6.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #272727;
+  border-radius: 100%;
+}
+
+.eye:after {
+  position: absolute;
+  content: '';
+  top: 0.25rem;
+  left: 0.75rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #fff;
+  border-radius: inherit;
+}
+
+.mouth {
+  position: absolute;
+  left: -0.75rem;
+  width: 5rem;
+  height: 5rem;
+  background: #a15829;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#4f291a), color-stop(70%, #a15829));
+  background-image: -webkit-linear-gradient(bottom left, #4f291a 0%, #a15829 70%);
+  background-image: -o-linear-gradient(bottom left, #4f291a 0%, #a15829 70%);
+  background-image: linear-gradient(to top right, #4f291a 0%, #a15829 70%);
+  border-radius: 100%;
+}
+
+.mouth:after {
+  position: absolute;
+  content: '';
+  top: 2rem;
+  left: 1.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #272727;
+  border-radius: 100% 50%;
+}
+
+.horn {
+  position: absolute;
+  width: 0.5rem;
+  height: 2rem;
+  background: #a15829;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#4f291a), color-stop(70%, #a15829));
+  background-image: -webkit-linear-gradient(bottom left, #4f291a 0%, #a15829 70%);
+  background-image: -o-linear-gradient(bottom left, #4f291a 0%, #a15829 70%);
+  background-image: linear-gradient(to top right, #4f291a 0%, #a15829 70%);
+}
+
+.horn:nth-child(1) {
+  top: -1.5rem;
+  left: 9rem;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.horn:nth-child(2) {
+  top: -1.5rem;
+  left: 7rem;
+  height: 1.5rem;
+}
+
+.horn:nth-child(1):after,
+.horn:nth-child(2):after {
+  position: absolute;
+  content: '';
+  top: -0.8rem;
+  left: -0.2rem;
+  width: 1rem;
+  height: 1rem;
+  background: inherit;
+  border-radius: 100%;
+}
+
+.spot {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background: #a15829;
+  border-radius: 100%;
+}
+
+.spot:nth-child(1) {
+  top: 5rem;
+  left: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.spot:nth-child(2) {
+  top: -1.5rem;
+  left: 4rem;
+}
+
+.spot:nth-child(3) {
+  top: 1.75rem;
+  left: 7rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.spot:nth-child(4) {
+  top: 3.5rem;
+  left: 10rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.giraffe.neck {
+  position: absolute;
+  top: 8rem;
+  left: 4.125rem;
+  width: 11rem;
+  height: 6rem;
+  background: #ffcd46;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f8901d), color-stop(80%, #ffcd46));
+  background-image: -webkit-linear-gradient(bottom, #f8901d 0%, #ffcd46 80%);
+  background-image: -o-linear-gradient(bottom, #f8901d 0%, #ffcd46 80%);
+  background-image: linear-gradient(to top, #f8901d 0%, #ffcd46 80%);
+  -webkit-transform: rotate(85deg);
+  -ms-transform: rotate(85deg);
+  transform: rotate(85deg);
+  overflow: hidden;
+}
+
+.giraffe.ear {
+  position: absolute;
+  top: 1.5rem;
+  left: 10.5rem;
+  width: 4rem;
+  height: 3rem;
+  background: #fe9b2e;
+  border: 0.75rem solid #ffcd46;
+  border-radius: 100% 20%;
+}
