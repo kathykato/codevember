@@ -1,0 +1,173 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #f6f6f6;
+}
+
+.container {
+  margin: auto;
+  width: 15rem;
+  height: 18rem;
+}
+
+.shape {
+  position: absolute;
+}
+
+.shape.center {
+  top: 1.25rem;
+  left: 6.5rem;
+  width: 2rem;
+  height: 16rem;
+  background: #383838;
+  background-image: -webkit-gradient(linear, left top, right top, from(#383838), color-stop(35%, #707070), color-stop(65%, #232323), to(#535353));
+  background-image: -webkit-linear-gradient(left, #383838 0%, #707070 35%, #232323 65%, #535353 100%);
+  background-image: -o-linear-gradient(left, #383838 0%, #707070 35%, #232323 65%, #535353 100%);
+  background-image: linear-gradient(to right, #383838 0%, #707070 35%, #232323 65%, #535353 100%);
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.shape.center:before,
+.shape.center:after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+}
+
+.shape.center:before {
+  top: -1.25rem;
+  left: 0.25rem;
+  width: 1.5rem;
+  height: 0.75rem;
+  background: #bcbcbe;
+  background-image: -webkit-gradient(linear, left top, right top, from(#959597), color-stop(35%, #dfdfe1), color-stop(65%, #959597), to(#d2d1d3));
+  background-image: -webkit-linear-gradient(left, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  background-image: -o-linear-gradient(left, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  background-image: linear-gradient(to right, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.shape.center:after {
+  top: 15.75rem;
+  left: 0.975rem;
+  width: 0.175rem;
+  height: 1rem;
+  background: #847f80;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.inner {
+  position: absolute;
+  top: -0.7rem;
+  width: 2rem;
+  height: 0.75rem;
+  background: #bcbcbe;
+  background-image: -webkit-gradient(linear, left top, right top, from(#959597), color-stop(35%, #dfdfe1), color-stop(65%, #959597), to(#d2d1d3));
+  background-image: -webkit-linear-gradient(left, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  background-image: -o-linear-gradient(left, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  background-image: linear-gradient(to right, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.clip {
+  position: absolute;
+  top: 1rem;
+  left: 2.65rem;
+  width: 0.5rem;
+  height: 4.5rem;
+  background: #bcbcbe;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(45%, #bcbcbe), to(#d2d1d3));
+  background-image: -webkit-linear-gradient(left, #bcbcbe 45%, #d2d1d3 100%);
+  background-image: -o-linear-gradient(left, #bcbcbe 45%, #d2d1d3 100%);
+  background-image: linear-gradient(to right, #bcbcbe 45%, #d2d1d3 100%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.clip:before,
+.clip:after {
+  position: absolute;
+  content: '';
+  background: #bcbcbe;
+}
+
+.clip:before {
+  left: -0.7rem;
+  width: 0.75rem;
+  height: 0.5rem;
+}
+
+.clip:after {
+  top: 2.5rem;
+  left: -0.4rem;
+  width: 0.5rem;
+  height: 2rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.divider {
+  position: absolute;
+  top: 13.75rem;
+  left: -1rem;
+  width: 4rem;
+  height: 2rem;
+  background: #f6f6f6;
+}
+
+.point {
+  position: absolute;
+  top: 13.75rem;
+  width: 2rem;
+  height: 2.5rem;
+  background: #bcbcbe;
+  background-image: -webkit-gradient(linear, left top, right top, from(#959597), color-stop(35%, #dfdfe1), color-stop(65%, #959597), to(#d2d1d3));
+  background-image: -webkit-linear-gradient(left, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  background-image: -o-linear-gradient(left, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  background-image: linear-gradient(to right, #959597 0%, #dfdfe1 35%, #959597 65%, #d2d1d3 100%);
+  border-radius: 3rem / 0 0 7rem 7rem;
+}
+
+.point:before,
+.point:after {
+  position: absolute;
+  content: '';
+  width: 2rem;
+  height: 3rem;
+  background: #f6f6f6;
+}
+
+.point:before {
+  left: -1.5rem;
+  -webkit-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.point:after {
+  left: 1.6rem;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
