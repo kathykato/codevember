@@ -1,0 +1,121 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #011f39;
+  background-image: -webkit-radial-gradient(circle, #011f39 0%, #010b15 100%);
+  background-image: -o-radial-gradient(circle, #011f39 0%, #010b15 100%);
+  background-image: radial-gradient(circle, #011f39 0%, #010b15 100%);
+  overflow: hidden;
+}
+
+.container {
+  margin: auto;
+  width: 20rem;
+  height: 20rem;
+}
+
+.shape { 
+  position: absolute;   
+}
+
+.shape.full {
+  top: 8.5rem;
+  left: 8rem;
+  width: 3rem;
+  height: 3rem;
+  background: #e9f2f9;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 3.5rem 2rem #e9f2f9;
+  box-shadow: 0 0 3.5rem 2rem #e9f2f9;
+  -webkit-filter: blur(0.5rem);
+  filter: blur(0.5rem);
+}
+
+.rays {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  opacity: 0.95;
+}
+
+.ray {
+  position: absolute;
+  z-index: -2;
+  top: 1.5rem;
+  left: 9.25rem;
+  width: 0.15rem;
+  height: 17.5rem;
+  background: #fff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#5b98ce), color-stop(80%, #f9fcff), to(#5b98ce));
+  background-image: -webkit-linear-gradient(bottom, #5b98ce 0%, #f9fcff 80%, #5b98ce 100%);
+  background-image: -o-linear-gradient(bottom, #5b98ce 0%, #f9fcff 80%, #5b98ce 100%);
+  background-image: linear-gradient(to top, #5b98ce 0%, #f9fcff 80%, #5b98ce 100%);
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 0.5rem #f9fcff, 0 0 1rem #297fc8, 0 0 1.5rem #5b98ce, 0 0 5rem #297fc8, 0 0 5rem #297fc8, 0 0 5rem #297fc8, 0 0 8rem #297fc8;
+  box-shadow: 0 0 0.5rem #f9fcff, 0 0 1rem #297fc8, 0 0 1.5rem #5b98ce, 0 0 5rem #297fc8, 0 0 5rem #297fc8, 0 0 5rem #297fc8, 0 0 8rem #297fc8;
+}
+
+.ray:nth-child(1) {
+  width: 0.5rem;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.ray:nth-child(2) {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.ray:nth-child(3) {
+  top: -0.25rem;
+  width: 1.5rem;
+  height: 20rem;
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.ray:nth-child(4) {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.ray:nth-child(5) {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.ray:nth-child(6) {
+  width: 0.5rem;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
